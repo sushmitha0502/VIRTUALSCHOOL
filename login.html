@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #061a73;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        #login-container {
+            text-align: center;
+            margin-top: 100px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            margin: 100px auto;
+        }
+
+        #login-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+        #login-container button {
+            background-color: var(--primary-color);
+            color: #000;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        #login-container button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        #login-container a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #login-container a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MY <span>Rights</span></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="C:\Users\hp pc\Downloads\gym\gym\About Page.html">About</a></li>
+            <li><a href="#">Legal Help</a></li>
+            <li><a href="#">Helpline</a></li>
+            <li><a href="#" onclick="alert('Contact Us: getfit456@gmail.com , lovely professional university, phagwara punjab, 144411 9146598372, 9985625425')">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <div id="login-container">
+        <h2>Login</h2>
+        <form id="login-form" action="index.html">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit"><a href=""C:\Users\sushm\Downloads\virtual school\eduhome-master\index.html""></a>Login</button>
+        </form>
+        <p>New user? <a href="register page.html">Register</a></p>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            console.log('Username:', username);
+            console.log('Password:', password);
+        });
+    </script>
+</body>
+</html>
